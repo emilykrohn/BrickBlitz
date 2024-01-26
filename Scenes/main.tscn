@@ -5,7 +5,7 @@
 [node name="UI" type="Control" parent="."]
 layout_mode = 3
 anchors_preset = 0
-offset_right = 1154.0
-offset_bottom = 648.0
+offset_right = 539.0
+offset_bottom = 956.0
 
 [node name="Game" type="Node2D" parent="."]
