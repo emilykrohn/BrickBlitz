@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://cx5wfm5uqesof"]
+[gd_scene load_steps=3 format=3 uid="uid://cx5wfm5uqesof"]
 
 [ext_resource type="PackedScene" uid="uid://d4ekuxgk0ewb4" path="res://Scenes/paddle.tscn" id="1_d5apm"]
+[ext_resource type="PackedScene" uid="uid://v48irtke1n5q" path="res://Scenes/blue_brick.tscn" id="2_jia10"]
 
 [node name="Main" type="Node2D"]
 
@@ -14,4 +15,74 @@ offset_bottom = 956.0
 
 [node name="Paddle" parent="Game" instance=ExtResource("1_d5apm")]
 position = Vector2(267, 809)
+scale = Vector2(2, 2)
+
+[node name="BlueBricks" type="Node" parent="Game"]
+
+[node name="RowOne" type="Node" parent="Game/BlueBricks"]
+
+[node name="BlueBrick" parent="Game/BlueBricks/RowOne" instance=ExtResource("2_jia10")]
+position = Vector2(33, 326)
+scale = Vector2(2, 2)
+
+[node name="BlueBrick2" parent="Game/BlueBricks/RowOne" instance=ExtResource("2_jia10")]
+position = Vector2(97, 326)
+scale = Vector2(2, 2)
+
+[node name="BlueBrick3" parent="Game/BlueBricks/RowOne" instance=ExtResource("2_jia10")]
+position = Vector2(161, 326)
+scale = Vector2(2, 2)
+
+[node name="BlueBrick4" parent="Game/BlueBricks/RowOne" instance=ExtResource("2_jia10")]
+position = Vector2(225, 326)
+scale = Vector2(2, 2)
+
+[node name="BlueBrick5" parent="Game/BlueBricks/RowOne" instance=ExtResource("2_jia10")]
+position = Vector2(289, 326)
+scale = Vector2(2, 2)
+
+[node name="BlueBrick6" parent="Game/BlueBricks/RowOne" instance=ExtResource("2_jia10")]
+position = Vector2(353, 326)
+scale = Vector2(2, 2)
+
+[node name="BlueBrick7" parent="Game/BlueBricks/RowOne" instance=ExtResource("2_jia10")]
+position = Vector2(417, 326)
+scale = Vector2(2, 2)
+
+[node name="BlueBrick8" parent="Game/BlueBricks/RowOne" instance=ExtResource("2_jia10")]
+position = Vector2(481, 326)
+scale = Vector2(2, 2)
+
+[node name="RowTwo" type="Node" parent="Game/BlueBricks"]
+
+[node name="BlueBrick9" parent="Game/BlueBricks/RowTwo" instance=ExtResource("2_jia10")]
+position = Vector2(33, 308)
+scale = Vector2(2, 2)
+
+[node name="BlueBrick10" parent="Game/BlueBricks/RowTwo" instance=ExtResource("2_jia10")]
+position = Vector2(97, 308)
+scale = Vector2(2, 2)
+
+[node name="BlueBrick11" parent="Game/BlueBricks/RowTwo" instance=ExtResource("2_jia10")]
+position = Vector2(161, 308)
+scale = Vector2(2, 2)
+
+[node name="BlueBrick12" parent="Game/BlueBricks/RowTwo" instance=ExtResource("2_jia10")]
+position = Vector2(225, 308)
+scale = Vector2(2, 2)
+
+[node name="BlueBrick13" parent="Game/BlueBricks/RowTwo" instance=ExtResource("2_jia10")]
+position = Vector2(289, 308)
+scale = Vector2(2, 2)
+
+[node name="BlueBrick14" parent="Game/BlueBricks/RowTwo" instance=ExtResource("2_jia10")]
+position = Vector2(353, 308)
+scale = Vector2(2, 2)
+
+[node name="BlueBrick15" parent="Game/BlueBricks/RowTwo" instance=ExtResource("2_jia10")]
+position = Vector2(417, 308)
+scale = Vector2(2, 2)
+
+[node name="BlueBrick16" parent="Game/BlueBricks/RowTwo" instance=ExtResource("2_jia10")]
+position = Vector2(481, 308)
 scale = Vector2(2, 2)
