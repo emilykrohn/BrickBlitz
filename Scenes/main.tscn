@@ -89,14 +89,22 @@ scale = Vector2(2, 2)
 
 [node name="Border" type="Node" parent="Game"]
 
-[node name="Line2D" type="Line2D" parent="Game/Border"]
+[node name="Line" type="StaticBody2D" parent="Game/Border"]
+
+[node name="Line2D" type="Line2D" parent="Game/Border/Line"]
 points = PackedVector2Array(-5, 962, -5, -3)
 
-[node name="Line2D2" type="Line2D" parent="Game/Border"]
+[node name="Line2" type="StaticBody2D" parent="Game/Border"]
+
+[node name="Line2D2" type="Line2D" parent="Game/Border/Line2"]
 points = PackedVector2Array(-5, -5, 522, -5)
 
-[node name="Line2D3" type="Line2D" parent="Game/Border"]
+[node name="Line3" type="StaticBody2D" parent="Game/Border"]
+
+[node name="Line2D3" type="Line2D" parent="Game/Border/Line3"]
 points = PackedVector2Array(520, -8, 520, 962)
 
-[node name="Line2D4" type="Line2D" parent="Game/Border"]
+[node name="Line4" type="StaticBody2D" parent="Game/Border"]
+
+[node name="Line2D4" type="Line2D" parent="Game/Border/Line4"]
 points = PackedVector2Array(-4, 965, 516, 965)
