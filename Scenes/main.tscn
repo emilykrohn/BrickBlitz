@@ -86,3 +86,17 @@ scale = Vector2(2, 2)
 [node name="BlueBrick16" parent="Game/BlueBricks/RowTwo" instance=ExtResource("2_jia10")]
 position = Vector2(481, 308)
 scale = Vector2(2, 2)
+
+[node name="Border" type="Node" parent="Game"]
+
+[node name="Line2D" type="Line2D" parent="Game/Border"]
+points = PackedVector2Array(-5, 962, -5, -3)
+
+[node name="Line2D2" type="Line2D" parent="Game/Border"]
+points = PackedVector2Array(-5, -5, 522, -5)
+
+[node name="Line2D3" type="Line2D" parent="Game/Border"]
+points = PackedVector2Array(520, -8, 520, 962)
+
+[node name="Line2D4" type="Line2D" parent="Game/Border"]
+points = PackedVector2Array(-4, 965, 516, 965)
