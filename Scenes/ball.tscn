@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://d16vcol27ew54"]
+
+[ext_resource type="Texture2D" uid="uid://1qn5am1mdo2k" path="res://Art/Brick_Breaker_Assets/paddles_and_balls.png" id="1_45xwk"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_n7jpi"]
+radius = 14.0
+
+[node name="Ball" type="RigidBody2D"]
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(3, 3)
+texture = ExtResource("1_45xwk")
+region_enabled = true
+region_rect = Rect2(128, 72, 8, 8)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-2, 0)
+shape = SubResource("CircleShape2D_n7jpi")
