@@ -1,7 +1,10 @@
-[gd_scene load_steps=3 format=3 uid="uid://cx5wfm5uqesof"]
+[gd_scene load_steps=4 format=3 uid="uid://cx5wfm5uqesof"]
 
 [ext_resource type="PackedScene" uid="uid://d4ekuxgk0ewb4" path="res://Scenes/paddle.tscn" id="1_d5apm"]
 [ext_resource type="PackedScene" uid="uid://v48irtke1n5q" path="res://Scenes/blue_brick.tscn" id="2_jia10"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kykvn"]
+size = Vector2(10, 960)
 
 [node name="Main" type="Node2D"]
 
@@ -86,3 +89,53 @@ scale = Vector2(2, 2)
 [node name="BlueBrick16" parent="Game/BlueBricks/RowTwo" instance=ExtResource("2_jia10")]
 position = Vector2(481, 308)
 scale = Vector2(2, 2)
+
+[node name="Border" type="Node" parent="Game"]
+
+[node name="Line" type="StaticBody2D" parent="Game/Border"]
+collision_mask = 0
+metadata/_edit_group_ = true
+
+[node name="Line2D" type="Line2D" parent="Game/Border/Line"]
+points = PackedVector2Array(-5, 0, -5, 960)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Game/Border/Line"]
+position = Vector2(-5, 480)
+shape = SubResource("RectangleShape2D_kykvn")
+
+[node name="Line2" type="StaticBody2D" parent="Game/Border"]
+position = Vector2(-11, 960)
+rotation = -1.5708
+scale = Vector2(1.17769, 0.569292)
+metadata/_edit_group_ = true
+
+[node name="Line2D" type="Line2D" parent="Game/Border/Line2"]
+points = PackedVector2Array(-5, 0, -5, 960)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Game/Border/Line2"]
+position = Vector2(-5, 480)
+shape = SubResource("RectangleShape2D_kykvn")
+
+[node name="Line3" type="StaticBody2D" parent="Game/Border"]
+position = Vector2(5.86198e-14, -12)
+rotation = -1.5708
+scale = Vector2(1.17769, 0.569292)
+metadata/_edit_group_ = true
+
+[node name="Line2D" type="Line2D" parent="Game/Border/Line3"]
+points = PackedVector2Array(-5, 0, -5, 960)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Game/Border/Line3"]
+position = Vector2(-5, 480)
+shape = SubResource("RectangleShape2D_kykvn")
+
+[node name="Line4" type="StaticBody2D" parent="Game/Border"]
+position = Vector2(525, -1)
+metadata/_edit_group_ = true
+
+[node name="Line2D" type="Line2D" parent="Game/Border/Line4"]
+points = PackedVector2Array(-5, 0, -5, 960)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Game/Border/Line4"]
+position = Vector2(-5, 480)
+shape = SubResource("RectangleShape2D_kykvn")
