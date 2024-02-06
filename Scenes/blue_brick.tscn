@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://v48irtke1n5q"]
+
+[ext_resource type="Texture2D" uid="uid://b2bykfjx0rco8" path="res://Art/Brick_Breaker_Assets/bricks.png" id="1_30ml4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_r2eyp"]
+size = Vector2(32, 9)
+
+[node name="BlueBrick" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_30ml4")
+region_enabled = true
+region_rect = Rect2(0, 0, 32, 16)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 3.5)
+shape = SubResource("RectangleShape2D_r2eyp")
