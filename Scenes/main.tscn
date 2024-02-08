@@ -93,50 +93,50 @@ scale = Vector2(2, 2)
 
 [node name="Border" type="Node" parent="Game"]
 
-[node name="Line" type="StaticBody2D" parent="Game/Border"]
+[node name="LeftLine" type="StaticBody2D" parent="Game/Border"]
 metadata/_edit_group_ = true
 
-[node name="Line2D" type="Line2D" parent="Game/Border/Line"]
+[node name="Line2D" type="Line2D" parent="Game/Border/LeftLine"]
 points = PackedVector2Array(-5, 0, -5, 960)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Game/Border/Line"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Game/Border/LeftLine"]
 position = Vector2(-5, 480)
 shape = SubResource("RectangleShape2D_kykvn")
 
-[node name="Line2" type="StaticBody2D" parent="Game/Border"]
+[node name="BottomLine" type="StaticBody2D" parent="Game/Border"]
 position = Vector2(-11, 960)
 rotation = -1.5708
 scale = Vector2(1.17769, 0.569292)
 metadata/_edit_group_ = true
 
-[node name="Line2D" type="Line2D" parent="Game/Border/Line2"]
+[node name="Line2D" type="Line2D" parent="Game/Border/BottomLine"]
 points = PackedVector2Array(-5, 0, -5, 960)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Game/Border/Line2"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Game/Border/BottomLine"]
 position = Vector2(-5, 480)
 shape = SubResource("RectangleShape2D_kykvn")
 
-[node name="Line3" type="StaticBody2D" parent="Game/Border"]
+[node name="TopLine" type="StaticBody2D" parent="Game/Border"]
 position = Vector2(5.86198e-14, -12)
 rotation = -1.5708
 scale = Vector2(1.17769, 0.569292)
 metadata/_edit_group_ = true
 
-[node name="Line2D" type="Line2D" parent="Game/Border/Line3"]
+[node name="Line2D" type="Line2D" parent="Game/Border/TopLine"]
 points = PackedVector2Array(-5, 0, -5, 960)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Game/Border/Line3"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Game/Border/TopLine"]
 position = Vector2(-5, 480)
 shape = SubResource("RectangleShape2D_kykvn")
 
-[node name="Line4" type="StaticBody2D" parent="Game/Border"]
+[node name="RightLine" type="StaticBody2D" parent="Game/Border"]
 position = Vector2(525, -1)
 metadata/_edit_group_ = true
 
-[node name="Line2D" type="Line2D" parent="Game/Border/Line4"]
+[node name="Line2D" type="Line2D" parent="Game/Border/RightLine"]
 points = PackedVector2Array(-5, 0, -5, 960)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Game/Border/Line4"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Game/Border/RightLine"]
 position = Vector2(-5, 480)
 shape = SubResource("RectangleShape2D_kykvn")
 
