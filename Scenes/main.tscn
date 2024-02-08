@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://cx5wfm5uqesof"]
 
-[ext_resource type="PackedScene" uid="uid://d4ekuxgk0ewb4" path="res://Scenes/paddle.tscn" id="1_d5apm"]
+[ext_resource type="PackedScene" uid="uid://dgafv0mq1c32f" path="res://Scenes/paddle.tscn" id="1_d5apm"]
 [ext_resource type="PackedScene" uid="uid://v48irtke1n5q" path="res://Scenes/blue_brick.tscn" id="2_jia10"]
 [ext_resource type="PackedScene" uid="uid://d16vcol27ew54" path="res://Scenes/ball.tscn" id="3_3n0p3"]
 
@@ -18,7 +18,7 @@ offset_bottom = 956.0
 [node name="Game" type="Node2D" parent="."]
 
 [node name="Paddle" parent="Game" instance=ExtResource("1_d5apm")]
-position = Vector2(267, 809)
+position = Vector2(256, 714)
 scale = Vector2(2, 2)
 
 [node name="BlueBricks" type="Node" parent="Game"]
@@ -94,7 +94,6 @@ scale = Vector2(2, 2)
 [node name="Border" type="Node" parent="Game"]
 
 [node name="Line" type="StaticBody2D" parent="Game/Border"]
-collision_mask = 0
 metadata/_edit_group_ = true
 
 [node name="Line2D" type="Line2D" parent="Game/Border/Line"]

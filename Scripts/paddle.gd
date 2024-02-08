@@ -1,13 +1,10 @@
-extends CharacterBody2D
+extends AnimatableBody2D
 
 
-@export var speed: float = 300.0
+@export var speed: float = 4.0
 
 func _physics_process(delta):
-	var direction = Input.get_axis("left", "right")
-	if direction:
-		velocity.x = direction * speed
-	else:
-		velocity.x = move_toward(velocity.x, 0, speed)
-
-	move_and_slide()
+	if Input.is_action_pressed("left"):
+		position.x -= speed
+	if Input.is_action_pressed("right"):
+		position.x += speed

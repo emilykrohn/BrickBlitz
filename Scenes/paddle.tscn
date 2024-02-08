@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://d4ekuxgk0ewb4"]
+[gd_scene load_steps=4 format=3 uid="uid://dgafv0mq1c32f"]
 
 [ext_resource type="Script" path="res://Scripts/paddle.gd" id="1_0l8wk"]
 [ext_resource type="Texture2D" uid="uid://1qn5am1mdo2k" path="res://Art/Brick_Breaker_Assets/paddles_and_balls.png" id="1_6tcwr"]
@@ -6,7 +6,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mfxnr"]
 size = Vector2(32, 9)
 
-[node name="Paddle" type="CharacterBody2D"]
+[node name="Paddle" type="AnimatableBody2D"]
 script = ExtResource("1_0l8wk")
 
 [node name="PaddleSprite" type="Sprite2D" parent="."]
