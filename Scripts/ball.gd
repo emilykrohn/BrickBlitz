@@ -1,8 +1,11 @@
-extends RigidBody2D
+extends CharacterBody2D
 
-var velocity = Vector2(10,200)
+var speed = 350
+var direction = Vector2(0.5, 1)
 
 func _physics_process(delta):
-	var collision_info = move_and_collide(velocity * delta)
-	if collision_info:
-		velocity = velocity.bounce(collision_info.get_normal())
+	var ball_velocity = speed * direction * delta
+	var collision = move_and_collide(ball_velocity)
+	
+	if collision != null:
+		direction = direction.bounce(collision.get_normal())

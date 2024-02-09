@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://dgafv0mq1c32f" path="res://Scenes/paddle.tscn" id="1_d5apm"]
 [ext_resource type="PackedScene" uid="uid://v48irtke1n5q" path="res://Scenes/blue_brick.tscn" id="2_jia10"]
-[ext_resource type="PackedScene" uid="uid://d16vcol27ew54" path="res://Scenes/ball.tscn" id="3_3n0p3"]
+[ext_resource type="PackedScene" uid="uid://yifmtdra5n7o" path="res://Scenes/ball.tscn" id="3_k4ttk"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kykvn"]
 size = Vector2(10, 960)
@@ -140,5 +140,5 @@ points = PackedVector2Array(-5, 0, -5, 960)
 position = Vector2(-5, 480)
 shape = SubResource("RectangleShape2D_kykvn")
 
-[node name="Ball" parent="Game" instance=ExtResource("3_3n0p3")]
-position = Vector2(294, 570)
+[node name="Ball" parent="Game" instance=ExtResource("3_k4ttk")]
+position = Vector2(157, 484)
