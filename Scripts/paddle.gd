@@ -6,7 +6,7 @@ extends AnimatableBody2D
 var can_move_left := true
 var can_move_right := true
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	if Input.is_action_pressed("left") and can_move_left:
 		position.x -= speed
 	if Input.is_action_pressed("right") and can_move_right:

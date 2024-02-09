@@ -7,6 +7,8 @@
 radius = 14.0
 
 [node name="Ball" type="RigidBody2D"]
+mass = 0.01
+gravity_scale = 0.0
 script = ExtResource("1_2nqfv")
 metadata/_edit_group_ = true
 
